@@ -4,7 +4,6 @@
 /* Prints a size x size square whose left col is at startCol */
 void print_square(int leftCol, int size)
 {
-  int i, j;
   int endCol = leftCol + size;
   for (int row = 0; row < size; row++){
     int col;
@@ -26,3 +25,7 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int leftCol, int sizeS, int sizeT){
+  print_triangle(leftCol, sizeT);
+  print_square((leftCol * 2), sizeS);
+}

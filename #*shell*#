@@ -1,0 +1,829 @@
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Chars = c) or 'q' to quit
+> t
+You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:30:3: error: expected declaration or statement at end of input
+   print_square (leftCol, size);
+   ^~~~~~~~~~~~
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:30:3: error: expected declaration or statement at end of input
+   print_square (leftCol, sizeS);
+   ^~~~~~~~~~~~
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:30:3: error: expected declaration or statement at end of input
+   print_square(leftCol, sizeS);
+   ^~~~~~~~~~~~
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> a
+You selected arrow:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+     *****
+     *****
+     *****
+     *****
+     *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> a
+You selected arrow:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+          *****
+          *****
+          *****
+          *****
+          *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md  uimain.c
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  *shell*
+student@systems-vm:~/Documents/arch1-0-bavalos6> rm *shell*
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  uimain.c
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: draw_chars.o: in function `print_char_5x7':
+/home/student/Documents/arch1-0-bavalos6/draw_chars.c:18: undefined reference to `font_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/Documents/arch1-0-bavalos6/draw_chars.c:18: undefined reference to `font_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o 5x7font.o uimain.o
+cc: error: 5x7font.o: No such file or directory
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o 5x7-font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+ ***   
+*   *  
+*   *  
+*   *  
+ *     
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:35:24: error: ‘a’ undeclared (first use in this function)
+         print_char_5x7(a);
+                        ^
+uimain.c:35:24: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o 5x7-font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o 5x7-font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+****** 
+  *   *
+  q*   *
+     *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+>      *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> 
+Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '*', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'S', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'l', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'w', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'h', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'i', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'h', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected square:
+     *****
+     *****
+     *****
+     *****
+     *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'h', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected arrow:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+          *****
+          *****
+          *****
+          *****
+          *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'p', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'y', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'o', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'u', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'w', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected arrow:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+          *****
+          *****
+          *****
+          *****
+          *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'o', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'p', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'r', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'i', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '(', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'T', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'r', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'i', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected arrow:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+          *****
+          *****
+          *****
+          *****
+          *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'g', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'l', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option '=', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> You selected triangle:
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ',', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Unrecognized option 'S', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> make all
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o 5x7-font.o uimain.o
+student@systems-vm:~/Documents/arch1-0-bavalos6> make run
+./asciidraw
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+*******
+*  *  *
+*  *  *
+*  *  *
+ ** ** 
+ ***** 
+*     *
+*     *
+*     *
+ *   * 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a, Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  5x7-font.o   draw_chars.c  draw_shapes.c  Makefile   uimain.c
+11x16font.o  8x12-font.c  draw_chars.o  draw_shapes.o  README.md  uimain.o
+5x7-font.c   asciidraw    draw.h        LICENSE        *shell*
+student@systems-vm:~/Documents/arch1-0-bavalos6> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md  uimain.c
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  *shell*
+student@systems-vm:~/Documents/arch1-0-bavalos6> rm *shell*
+student@systems-vm:~/Documents/arch1-0-bavalos6> 
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  uimain.c
+student@systems-vm:~/Documents/arch1-0-bavalos6> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Makefile
+	modified:   draw.h
+	modified:   draw_chars.c
+	modified:   draw_shapes.c
+	modified:   uimain.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.#*shell*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+student@systems-vm:~/Documents/arch1-0-bavalos6> ls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  uimain.c
+student@systems-vm:~/Documents/arch1-0-bavalos6> 
